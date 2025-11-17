@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add/Modify Events</h2>
+<form method="post" class="event-form">
+    <label for="event_name">Event Name:</label>
+    <input type="text" name="event_name" required>
+
+    <label for="event_date">Event Date:</label>
+    <input type="date" name="event_date" required>
+
+    <label for="event_place">Event Place:</label>
+    <input type="text" name="event_place" required>
+
+    <label for="event_desc">Event Description:</label>
+    <textarea name="event_desc" required></textarea>
+
+    <button type="submit">Save Event</button>
+</form>
+{% endblock %}
